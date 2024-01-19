@@ -1,3 +1,0 @@
-/Users/venki/Desktop/Cpp/OpenGL/OpenGLExperiments/cmake-build-debug/CMakeFiles/OpenGLExperiments.dir
-/Users/venki/Desktop/Cpp/OpenGL/OpenGLExperiments/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/venki/Desktop/Cpp/OpenGL/OpenGLExperiments/cmake-build-debug/CMakeFiles/rebuild_cache.dir
