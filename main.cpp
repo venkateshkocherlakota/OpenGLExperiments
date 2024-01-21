@@ -25,19 +25,27 @@ int main()
     // std::vector<unsigned int> tringleShaderAndVAO = create_2_triangles();
     // std::vector<unsigned int> tringleShaderAndVAO = create_a_triangle();
     // std::vector<unsigned int> rectShaderAndVAO = create_a_rectangle();
+    unsigned int vao = -1;
     Triangle triangles[] = {
         { 0.1f, 400, 300, 0, SCR_WIDTH, SCR_HEIGHT }, // center
-        { 0.1f, 450, 350, 0, SCR_WIDTH, SCR_HEIGHT }, // top right
+        
         { 0.1f, 500, 400, 0, SCR_WIDTH, SCR_HEIGHT }, // top right
-        { 0.1f, 350, 350, 0, SCR_WIDTH, SCR_HEIGHT }, // top left
+        { 0.1f, 600, 500, 0, SCR_WIDTH, SCR_HEIGHT }, // top right
+        
         { 0.1f, 300, 400, 0, SCR_WIDTH, SCR_HEIGHT }, // top left
-        { 0.1f, 450, 250, 0, SCR_WIDTH, SCR_HEIGHT }, // bottom right
+        { 0.1f, 200, 500, 0, SCR_WIDTH, SCR_HEIGHT }, // top left
+
         { 0.1f, 500, 200, 0, SCR_WIDTH, SCR_HEIGHT }, // bottom right
-        { 0.1f, 350, 250, 0, SCR_WIDTH, SCR_HEIGHT }, // bottom left
+        { 0.1f, 600, 100, 0, SCR_WIDTH, SCR_HEIGHT }, // bottom right
+
         { 0.1f, 300, 200, 0, SCR_WIDTH, SCR_HEIGHT }, // bottom left
+        { 0.1f, 200, 100, 0, SCR_WIDTH, SCR_HEIGHT }, // bottom left
     };
 
-    for (int i = 0; i < (sizeof(triangles)/sizeof(Triangle)); i++) triangles[i].initialize();
+    for (int i = 0; i < (sizeof(triangles)/sizeof(Triangle)); i++)
+    {
+        triangles[i].initialize(vao);
+    }
 
     
     // render loop
