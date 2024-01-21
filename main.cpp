@@ -21,7 +21,8 @@ int main()
     std::string title = "Hello OpenGL";
     GLFWwindow* window = create_glfw_window(SCR_WIDTH, SCR_HEIGHT, title);
 
-    std::vector<unsigned int> tringleShaderAndVAO = create_a_triangle();
+    std::vector<unsigned int> tringleShaderAndVAO = create_2_triangles();
+    // std::vector<unsigned int> tringleShaderAndVAO = create_a_triangle();
     // std::vector<unsigned int> rectShaderAndVAO = create_a_rectangle();
 
     // render loop
@@ -36,7 +37,8 @@ int main()
         // first clear the screen
         render_clear_screen();
         // rest of the renders here
-        render_a_triangle(tringleShaderAndVAO[0], tringleShaderAndVAO[1]);
+        render_2_triangles(tringleShaderAndVAO[0], tringleShaderAndVAO[1]);
+        // render_a_triangle(tringleShaderAndVAO[0], tringleShaderAndVAO[1]);
         // render_a_rectangle(rectShaderAndVAO[0], rectShaderAndVAO[1]);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
