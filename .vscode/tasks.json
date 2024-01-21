@@ -16,7 +16,7 @@
        "${workspaceFolder}/*.cpp",
        "${workspaceFolder}/glad.c",
        "-o",
-       "${workspaceFolder}/app",
+       "${workspaceFolder}/build/app",
        "-framework",
        "OpenGL",
        "-framework",
